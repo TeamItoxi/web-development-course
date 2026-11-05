@@ -1,0 +1,12 @@
+{
+  "name": "web-development-course",
+  "private": true,
+  "description": "Web開発講座の各回終了時点の完成コード",
+  "packageManager": "pnpm@11.22.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "workspaces": [
+    "第*回"
+  ]
+}

@@ -1,0 +1,12 @@
+node_modules/
+.pnpm-store/
+dist/
+build/
+.DS_Store
+Thumbs.db
+npm-debug.log*
+pnpm-debug.log*
+package-lock.json
+npm-shrinkwrap.json
+.env.keys
+*.decrypted
