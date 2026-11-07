@@ -8,6 +8,7 @@
 | --- | --- | --- |
 | 第1回 | HTML・CSSによる図鑑の表紙 | [第1回](第1回/) |
 | 第2回 | 画像・リンクの追加 | [第2回](第2回/) |
+| 第3回 | CSSとボックスモデルによる紹介カード | [第3回](第3回/) |
 
 各フォルダに、その回の終了時点で必要なファイル一式を保存。前の回のフォルダに依存せず、単独で確認できる構成。
 
@@ -25,18 +26,24 @@ web-development-course/
 │   ├── style.css
 │   └── images/
 │       └── red-panda.png
+├── 第3回/
+│   ├── README.md
+│   ├── index.html
+│   ├── style.css
+│   └── images/
+│       └── red-panda.png
 ├── package.json
 ├── pnpm-workspace.yaml
 └── pnpm-lock.yaml
 ~~~
 
-## 第1回・第2回の確認
+## 第1回〜第3回の確認
 
 1. GitHubの「Code」から「Download ZIP」でダウンロード、またはリポジトリをclone
 2. ZIPの場合は展開
 3. 確認したい回の `index.html` をChromeまたはEdgeで開く
 
-第1回・第2回はHTMLとCSSのみ。Node.jsやパッケージのインストールは不要。第2回の外部リンクの確認にはインターネット接続が必要。
+第1回〜第3回はHTMLとCSSで動作。外部リンクの確認にはインターネット接続が必要。
 
 ## パッケージ管理
 
