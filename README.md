@@ -14,6 +14,7 @@
 | 第6回 | JavaScriptの変数・値・演算 | [第6回](第6回/) |
 | 第7回 | JavaScriptの条件分岐・繰り返し | [第7回](第7回/) |
 | 第8回 | JavaScriptの配列・オブジェクト・関数 | [第8回](第8回/) |
+| 第9回 | JavaScriptのDOM・イベント・検索フォーム | [第9回](第9回/) |
 
 各フォルダに、その回の終了時点で必要なファイル一式を保存。前の回のフォルダに依存せず、単独で確認できる構成。
 
@@ -88,12 +89,24 @@ web-development-course/
 │       ├── red-panda.png
 │       ├── penguin.svg
 │       └── capybara.svg
+├── 第9回/
+│   ├── README.md
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   ├── animals.js
+│   ├── display-practice.js
+│   ├── form-practice.html
+│   └── images/
+│       ├── red-panda.png
+│       ├── penguin.svg
+│       └── capybara.svg
 ├── package.json
 ├── pnpm-workspace.yaml
 └── pnpm-lock.yaml
 ~~~
 
-## 第1回〜第8回の確認
+## 第1回〜第9回の確認
 
 1. GitHubの「Code」から「Download ZIP」でダウンロード、またはリポジトリをclone
 2. ZIPの場合は展開
