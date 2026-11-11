@@ -57,6 +57,7 @@ web-development-course/
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
+│   ├── display-practice.js
 │   ├── form-practice.html
 │   └── images/
 │       ├── red-panda.png
