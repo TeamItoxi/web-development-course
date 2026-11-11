@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+    <title>わたしのいきもの図鑑</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="animals.js" defer></script>
+  </head>
+  <body>
+    <main id="top">
+      <header>
+        <h1>わたしのいきもの図鑑</h1>
+        <p>動物たちの見た目と暮らしを集めた図鑑。</p>
+        <nav
+          class="animal-nav"
+          id="animal-nav"
+          aria-label="掲載中のいきもの"
+        ></nav>
+      </header>
+      <section class="animal-card">
+        <h2>観察ログ</h2>
+        <p id="observation-result">計算前</p>
+        <p id="observation-status">判定前</p>
+        <ul id="observation-notes" aria-label="観察メモ"></ul>
+      </section>
+      <section aria-labelledby="animals-title">
+        <h2 id="animals-title">いきもの一覧</h2>
+        <div class="animal-grid" id="animal-grid"></div>
+        <template id="animal-card-template">
+          <article class="animal-card">
+            <h3></h3>
+            <img alt="" width="320">
+            <p class="animal-description"></p>
+            <p>
+              <a href="https://www.tokyo-zoo.net/">
+                東京ズーネットで調べる
+              </a>
+            </p>
+          </article>
+        </template>
+      </section>
+      <footer>
+        <a href="#top">ページの先頭へ</a>
+      </footer>
+    </main>
+  </body>
+</html>
