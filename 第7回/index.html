@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+    <title>わたしのいきもの図鑑</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main id="top">
+      <header>
+        <h1>わたしのいきもの図鑑</h1>
+        <p>動物たちの見た目と暮らしを集めた図鑑。</p>
+        <nav class="animal-nav" aria-label="掲載中のいきもの">
+          <a href="#red-panda">レッサーパンダ</a>
+          <a href="#penguin">ペンギン</a>
+          <a href="#capybara">カピバラ</a>
+        </nav>
+      </header>
+      <section class="animal-card">
+        <h2>観察ログ</h2>
+        <p id="observation-result">計算前</p>
+        <p id="observation-status">判定前</p>
+        <ul id="observation-notes" aria-label="観察メモ"></ul>
+      </section>
+      <section aria-labelledby="animals-title">
+        <h2 id="animals-title">いきもの一覧</h2>
+        <div class="animal-grid">
+          <article class="animal-card" id="red-panda">
+            <h3>レッサーパンダ</h3>
+            <img
+              src="images/red-panda.png"
+              alt="木の枝で休むレッサーパンダのイラスト"
+              width="320"
+            >
+            <p>木登りが得意。長くふさふさした尾が目印。</p>
+            <p>
+              <a href="https://www.tokyo-zoo.net/">
+                東京ズーネットで調べる
+              </a>
+            </p>
+          </article>
+          <article class="animal-card" id="penguin">
+            <h3>ペンギン</h3>
+            <img
+              src="images/penguin.svg"
+              alt="氷の上に立つペンギンのイラスト"
+              width="320"
+            >
+            <p>翼を使って水の中を泳ぐ鳥。</p>
+            <p>
+              <a href="https://www.tokyo-zoo.net/">
+                東京ズーネットで調べる
+              </a>
+            </p>
+          </article>
+          <article class="animal-card" id="capybara">
+            <h3>カピバラ</h3>
+            <img
+              src="images/capybara.svg"
+              alt="水辺に立つカピバラのイラスト"
+              width="320"
+            >
+            <p>水辺で暮らす、大きなげっ歯類。</p>
+            <p>
+              <a href="https://www.tokyo-zoo.net/">
+                東京ズーネットで調べる
+              </a>
+            </p>
+          </article>
+        </div>
+      </section>
+      <footer>
+        <a href="#top">ページの先頭へ</a>
+      </footer>
+    </main>
+  </body>
+</html>
