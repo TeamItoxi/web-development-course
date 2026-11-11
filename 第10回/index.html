@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/penguin.svg" type="image/svg+xml">
+    <title>わたしのいきもの図鑑</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="./animals.js"></script>
+  </head>
+  <body>
+    <main id="top">
+      <header>
+        <h1>わたしのいきもの図鑑</h1>
+        <p>動物たちの見た目と暮らしを集めた図鑑。</p>
+        <nav
+          class="animal-nav"
+          id="animal-nav"
+          aria-label="掲載中のいきもの"
+        ></nav>
+      </header>
+      <section class="animal-card">
+        <h2>観察ログ</h2>
+        <p id="observation-result">計算前</p>
+        <p id="observation-status">判定前</p>
+        <ul id="observation-notes" aria-label="観察メモ"></ul>
+      </section>
+      <section aria-labelledby="animals-title">
+        <h2 id="animals-title">いきもの一覧</h2>
+        <form id="animal-search" class="animal-search" role="search">
+          <label for="animal-keyword">いきものの名前</label>
+          <input
+            id="animal-keyword"
+            name="keyword"
+            type="search"
+            placeholder="例：ペンギン"
+          >
+          <button type="submit">検索</button>
+        </form>
+        <div class="animal-filters">
+          <label for="animal-category">分類</label>
+          <select id="animal-category">
+            <option value="">すべて</option>
+            <option value="mammal">ほ乳類</option>
+            <option value="bird">鳥類</option>
+          </select>
+          <label>
+            <input id="only-favorites" type="checkbox">
+            お気に入りのみ
+          </label>
+        </div>
+        <p id="favorite-storage-status" role="status" hidden></p>
+        <p id="animal-search-status" role="status"></p>
+        <div class="animal-grid" id="animal-grid"></div>
+        <template id="animal-card-template">
+          <article class="animal-card">
+            <h3></h3>
+            <img alt="" width="320">
+            <p class="animal-description"></p>
+            <button class="favorite-button" type="button"
+              aria-pressed="false">お気に入り</button>
+            <p>
+              <a href="https://www.tokyo-zoo.net/">
+                東京ズーネットで調べる
+              </a>
+            </p>
+          </article>
+        </template>
+      </section>
+      <footer>
+        <a href="#top">ページの先頭へ</a>
+      </footer>
+    </main>
+  </body>
+</html>
